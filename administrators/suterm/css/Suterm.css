@@ -1,0 +1,280 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  /*background-image: url("http://entuizer.com/images/big-bg.png");  
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-attachment: fixed;*/
+  background: rgb(0, 44, 89);
+  width: 100%;
+  height: 100%;
+}
+
+.form-signin {
+  max-width: 400px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin-heading{
+  color: whitesmoke;
+}
+
+/*ESTILOS PARA LOADIMAGE*/
+div.loadImage{
+  margin-bottom: 1em;
+}
+
+div.loadImage span{
+  color: #0692FF; 
+  font-size: 1.2em; 
+  font-weight: bold;
+}
+
+input#inputImage{
+  color: #0692FF; 
+  font-size: 1em; 
+  font-weight: bold;
+  border:none;
+  display: none;
+  margin-bottom: 1em;
+}
+/*TERMINAN ESTILOS PARA LOADIMAGE*/
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn-primary{
+  background-color: #0692FF !important;
+}
+
+.logo{
+  margin-top: 2em;
+  max-width: 500px;
+}
+
+/*Modificación de estilos Bootstrap*/
+/* navbar */
+.navbar-default {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #777;
+    text-shadow: 2px 2px 2px rgba(255,255,255,.8);
+    margin-right: 3em;
+}
+
+.searching-form div{
+  margin: auto;
+  width: 100%;
+  max-width: 800px; 
+  min-width: 350px;
+}
+
+.searching-form input{
+  width: 75%; 
+  display: inline-block;
+}
+
+.searching-form button{
+  width: 20%; display: 
+  inline-block;
+}
+
+/*Botón que oculta wrappers de las tablas*/
+#btnHide{
+  display: none;
+  margin-bottom: 1em;
+  box-shadow: 2px 2px 2px black;
+}
+
+/*Estilos para tablas*/
+table{
+  margin: 1.5em auto;
+  max-width: 800px !important;
+  border-collapse: separate;
+  border-spacing: .3em;
+}
+
+table thead, table tfoot{
+  background: linear-gradient(#004880,#005799,#005799,#004880);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+table tbody tr:nth-child(odd){
+  background: #80c8ff !important;
+}
+
+table tbody tr:nth-child(even){
+  background: #cce9ff !important;
+}
+
+table thead tr th, table tfoot tr th{
+  box-shadow: 0px 0px 15px black;
+}
+
+table tbody tr td{
+  box-shadow: 0px 0px 15px black;
+}
+
+/*Estilos para elemento DATATABLES con id #addQuery*/
+#addQuery_length, #addQuery_filter, #addQuery_info, #addQuery_paginate #addQuery_previous, #addQuery_paginate #addQuery_next, #addQuery_paginate span .paginate_button, .ellipsis{
+  color: white !important;
+}
+
+#addQuery_length select, #addQuery_filter input, #addQuery_paginate span .current{
+  color: black !important;
+}
+
+#addQuery_previous, #addQuery_next{
+  background: linear-gradient(#003366,#000d1a) !important;
+}
+
+/*Estilos para elemento DATATABLES con id #addWhoRead*/
+#addWhoRead_length, #addWhoRead_filter, #addWhoRead_info, #addWhoRead_paginate #addWhoRead_previous, #addWhoRead_paginate #addWhoRead_next, #addWhoRead_paginate span .paginate_button, .ellipsis{
+  color: white !important;
+}
+
+#addWhoRead_length select, #addWhoRead_filter input, #addWhoRead_paginate span .current{
+  color: black !important;
+}
+
+#addWhoRead_previous, #addWhoRead_next{
+  background: linear-gradient(#003366,#000d1a) !important;
+}
+
+/*Estilos para elemento DATATABLES con id #addWhoUnread*/
+#addWhoUnread_length, #addWhoUnread_filter, #addWhoUnread_info, #addWhoUnread_paginate #addWhoUnread_previous, #addWhoUnread_paginate #addWhoUnread_next, #addWhoUnread_paginate span .paginate_button, .ellipsis{
+  color: white !important;
+}
+
+#addWhoUnread_length select, #addWhoUnread_filter input, #addWhoUnread_paginate span .current{
+  color: black !important;
+}
+
+#addWhoUnread_previous, #addWhoUnread_next{
+  background: linear-gradient(#003366,#000d1a) !important;
+}
+
+#ajaxMask{
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0,0,0, .7);
+  z-index: 999999999;
+}
+
+#ajaximgLoader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -64px;
+  margin-top: -64px;
+}
+
+
+
+/*Estilos para resoluciones mayores a 768px*/
+@media (min-width: 768px){
+  .navbar{
+    border-radius: 0;
+  }
+}
+
+/*Estilos para resoluciones menores a 470px*/
+@media (max-width: 470px){
+  #addWhoUnread_wrapper{
+    font-size: 10px;
+  }
+
+  #addWhoRead_wrapper{
+    font-size: 10px;
+  }
+
+  #addQuery_wrapper{
+    font-size: 10px;
+  }
+
+  .btn{
+    font-size: 10px !important;
+  }
+
+  #btnSend, #btnSearch{
+    font-size: 14px !important;
+  }
+}
+
+/*Estilos para resoluciones menores a 400px*/
+@media (max-width: 400px){
+  .searching-form div{
+    max-width: none;
+    min-width: 200px;
+  }
+
+  .searching-form div input{
+    display: block;
+    width: 100%;
+  }
+
+  .searching-form div button{
+    display: block;
+    width: 100%;
+  }
+
+  #addWhoUnread_wrapper{
+    font-size: 8px;
+  }
+
+  #addWhoRead_wrapper{
+    font-size: 8px;
+  }
+
+  #addQuery_wrapper{
+    font-size: 8px;
+  }
+
+  .btn{
+    font-size: 8px !important;
+  }
+
+  #btnSend, #btnSearch{
+    font-size: 14px !important;
+  }
+
+}
